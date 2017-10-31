@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/db.js"],"names":["db","connect","callback"],"mappings":";;;;;;AAAA;;;;;;kBAEe,oBAAU;AACrB,QAAIA,KAAK,mBAASC,OAAT,CAAiB,mCAAjB,CAAT;AACAC,aAASF,EAAT;AACH,C","file":"db.js","sourcesContent":["import mongoose from 'mongoose';\n\nexport default callback=>{\n    let db = mongoose.connect(\"mongodb://localhost:27017/pokeapi\");\n    callback(db);\n}"]}
